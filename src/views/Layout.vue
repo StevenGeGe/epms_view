@@ -2,13 +2,13 @@
   <!-- 页面主样式  -->
   <!-- 页面容器布局 -->
   <div class="about">
+  <el-container>
+    <el-header>头</el-header>
     <el-container>
-      <el-header>头</el-header>
-      <el-container>
-        <el-aside width="200px">侧边栏</el-aside>
-        <el-main>主体</el-main>
-      </el-container>
+      <el-aside width="200px">侧边栏</el-aside>
+      <el-main>主体</el-main>
     </el-container>
+  </el-container>
   </div>
 </template>
 
@@ -50,38 +50,33 @@ scoped lang="less": 设置格式生效
 /*
 * 设置layout容器铺满整个页面
 */
-.el-container {
+.el-container{
   position: absolute;
   width: 100%;
-  top: 0px;
-  left: 0;
+  top: 0px ;
+  left: 0 ;
   bottom: 0;
 }
-
-.el-header {
+.el-header{
   padding: 0;
   z-index: 1000;
 }
 
 // header菜单需要靠右的添加.fr即可
 // (如：<el-menu-item class="fr" index="3">消息中心</el-menu-item>)
-.el-header .fr {
+.el-header .fr{
   float: right;
 }
-
-.el-header .el-menu {
+.el-header .el-menu{
   border-bottom: none;
 }
-
-.el-aside, .el-main {
+.el-aside, .el-main{
   padding-top: 60px;
 }
-
-.el-aside {
+.el-aside{
   background: #545c64;
 }
-
-.el-aside .el-menu {
+.el-aside .el-menu{
   border-right: none;
 }
 

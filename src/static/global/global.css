@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+    color: #4a4a4a;
+    font-family: PingFangSC-Light; /*苹果设计的一款全新的中文系统字体，该字体支持苹果的动态字体调节技术*/
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

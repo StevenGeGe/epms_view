@@ -1,20 +1,28 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-//import Home from "../views/Home.vue";
-import Layout from "../views/Layout";
+
+//import Layout from "../views/Layout";
+import Login from "@/views/Login";
+import Container from '@/components/container/Container'
+
 
 Vue.use(VueRouter);
-
+// 页面登录路由跳转
 const routes = [
   {
     path: "/",
-    name: "Layout",
-    component: Layout
+    name: "Container'",
+    component: Container // 组件名称
   },
   {
     path: "/epms",
-    name: "Layout",
-    component: Layout
+    name: "epms",
+    component: Login
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login
   }
 ];
 
