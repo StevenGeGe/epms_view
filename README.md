@@ -30,6 +30,11 @@ npm i element-ui -S
 npm fund
 ```
 
+### 添加sass-loader 
+```
+npm install node-sass sass-loader --save-dev
+```
+
 ### 添加代码规范检查插件
 ```
 npm i -g eslint
